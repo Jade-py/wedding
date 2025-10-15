@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=390px, initial-scale=1.0">
+    <meta property="og:title" content="Akhil & Jasmine's Wedding Invitation">
+    <meta property="og:description" content="Join us to celebrate our wedding!">
+    <meta property="og:image" content="img_1.png">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="img_1.png" type="image/png">
+    <title>Akhil & Jasmine's Wedding Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">    <title>Title</title>
+</head>
+<style>
+    body {
+        background-color: #2A2A3C;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column; /* Stack the children vertically */
+        align-items: center;
+        color: white;
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400; /* Adjusted to a more common weight */
+        font-style: normal;
+        font-size: 70px;
+        line-height: 1;
+        padding-top: 30px;
+    }
+    .intro p {
+        margin: 0; /* Remove default margins from paragraphs */
+        padding: 0;
+        font-weight: 900;
+    }
+    .date {
+        padding-top: 30px;
+        font-size: 30px;
+    }
+    .intro img{
+        margin-top: 200px;
+        padding-top: 20px;
+        width: 100%;
+        height: 80px;
+    }
+    .intro-mid{
+        display: flex;
+        flex-direction: column; /* Stack the children vertically */
+        align-items: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        /* Further adjustments for small mobile phones */
+        .intro{
+            color: #d4d4d4;
+            font-family: "Times";
+            font-size:20px;
+            font-size: 10vw;
+        }
+        .intro p {
+            font-size: 12vw;
+            font-weight: 700;
+            font-family: "Dancing Script";
+        }
+        .date{
+            margin: 0;
+            padding-top: 30px;
+            font-size: 30px;
+            font-size: 8vw;
+        }
+        .intro img{
+            margin:0;
+            padding-top: 10px;
+            width: 90%;
+            height: 500px;
+        }
+        .intro-mid{
+            display: flex;
+            flex-direction: column; /* Stack the children vertically */
+            align-items: center;
+            justify-content: center;
+            padding-top: 40px;
+        }
+        .welcome{
+            font-family: "Dancing Script";
+            color: #2A2A3C;
+            font-size: 20px;
+            background-color: white;
+            height: auto;
+            width: 75%;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.4);
+            margin-bottom: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .x{
+            font-size: 9vw;
+            font-family: "Dancing Script";
+            text-align: center;
+            justify-content: center;
+            background: linear-gradient(
+                90deg,
+                #FFD700,    /* A vibrant gold */
+                #E6B800,    /* A slightly darker gold */
+                #B68B00     /* Black */
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            /* Make the text transparent so the background shows through */
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+        .countdown{
+            margin-top:-20px;
+            font-family: "Times";
+            font-size: 4vw;
+            color: white;
+            background: linear-gradient(
+                90deg,
+                #FFD700,    /* A vibrant gold */
+                #E6B800,    /* A slightly darker gold */
+                #B68B00     /* Black */
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            /* Make the text transparent so the background shows through */
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            display: flex;
+            flex-direction: row;
+        }
+        .countdown-separator{
+            margin: 0 5px;
+        }
+        .countdown-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+        .mid{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+        }
+        .mid img{
+            width: 75%;
+            height:170px;
+            border-radius: 20px 20px 0 0 ;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+        }
+        .main-2{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            background-color: white;
+	    margin: 0;
+	    padding: 0;
+        }
+        .event{
+            background-color: white;
+            color: #2A2A3C;
+            width: 60%;
+            text-align: left;
+            font-family: "Dancing Script";
+            padding: 0 30px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .mid-end{
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 50px;
+        }
+        .map{
+            display: flex;
+            flex-direction: row;
+            margin-right: 5px;
+        }
+        .map-item{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-left: 5px;
+        }
+        .map-item iframe{
+            width: 100%;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.2);
+        }
+    }
+</style>
+<body>
+    <div class="main-1">
+        <div class="intro".>
+            <p>Akhil Karamullil</p>
+            <p>&</p>
+            <p>Jasmine George</p>
+            <div class="date">10.01.2026</div>
+            <img src="img.png">
+            scroll down
+            <svg fill="#d4d4d4" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12vw" height="15vw" viewBox="0 0 30.727 30.727" xml:space="preserve" stroke="#d4d4d4"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.184362"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M29.994,10.183L15.363,24.812L0.733,10.184c-0.977-0.978-0.977-2.561,0-3.536c0.977-0.977,2.559-0.976,3.536,0 l11.095,11.093L26.461,6.647c0.977-0.976,2.559-0.976,3.535,0C30.971,7.624,30.971,9.206,29.994,10.183z"></path> </g> </g></svg>
+        </div>
+        <div class="intro-mid">
+            <div class="welcome">
+                <h2>Dear friends and family!</h2>
+                <p>We arw thrilled to announce a special event happening this winter</p>
+                <p>Our wedding</p>
+                <p>This day  wouldn't be complete without our closest loved ones, so we warmly invite you to join us and celebrate this joyful occassion together.</p>
+                <p>We can't wait to share this memorable moment with you!</p>
+            </div>
+            <p class="x">Lets enjoy this event in</p>
+            <div class="countdown" id="countdown"></div>
+        </div>
+        <div class="mid">
+            <img src="img2.jpg">
+        </div>
+    </div>
+    <div class="main-2">
+        <div class="event">
+            <span style="text-align:center;"><h1>Event timeline</h1></span>
+            <p>03.10.2026</p>
+            <p>5:00 pm &nbsp&nbsp&nbsp&nbsp&nbsp Engagement</p>
+            <p>7:30 pm &nbsp&nbsp&nbsp&nbsp&nbsp Dinner</p>
+            <br>
+            <p>10.01.2026</p>
+            <p>10:30 am &nbsp&nbsp&nbsp&nbsp&nbsp  Wedding Ceremony</p>
+            <p>12:00 pm &nbsp&nbsp&nbsp&nbsp&nbsp Reception</p>
+        </div>
+        <h1 style="font-family: 'Dancing Script'; color: #2A2A3C; padding-top:30px;">The Location</h1>
+        <div class="mid-end">
+            <div class="map">
+                <div class="map-item">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.6289409747474!2d76.47469977478501!3d9.366065490709335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0620b67a1c5d19%3A0x332e712162e26149!2sSt.%20George%20Forane%20Church%20Kurushadi!5e0!3m2!1sen!2sin!4v1757682318476!5m2!1sen!2sin"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    St Forane Church
+                </div>
+                <div class="map-item">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.9313357811966!2d76.53552297478923!3d9.686901790403095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07d47adeb0e4b5%3A0xbe903b769f12c356!2sSt.%20Mathews%20Church%20Kottackupuram!5e0!3m2!1sen!2sin!4v1757658992046!5m2!1sen!2sin"
+                            class="map"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    St Mathews Church
+                </div>
+                <div class="map-item">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.4344025016003!2d76.5082428747887!3d9.643872890444108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07d5b456f596e1%3A0x49d7c1b8267774b2!2sStay%20Samara!5e0!3m2!1sen!2sin!4v1757658484378!5m2!1sen!2sin"
+                            class="map"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    Stay Samara
+                </div>
+            </div>
+        </div>
+        <h3 style="margin:0; padding:0; color: #2A2A3C; font-size: 3vh;">Hope to see you there</h3>
+        <h3 style="margin:0; padding:25px; color: #2A2A3C;font-size: 3vh;">Yours,</h3>
+            <h1 style="margin-top: -15px; color: #2A2A3C; font-family: 'Dancing Script'; font-size: 6vh;"> Amboori & Jachu</h1>
+        <span style="display: inline-block; font-size: 50px; color: #000000; background: white; border-radius: 6px; margin-top:-30px;">♡</span>
+    </div>
+</body>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 10, 2026 10:30:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="countdown"
+      document.getElementById("countdown").innerHTML = `
+        <div class="countdown-item">
+            <span class="countdown-number" style="font-size: 15vw;">${days}</span>
+            <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-separator">
+            <span class="countdown-number" style="font-size: 15vw; margin: 0 5px;">:</span>
+        </div>
+        <div class="countdown-item">
+            <span class="countdown-number" style="font-size: 15vw;">${hours}</span>
+            <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-separator">
+            <span class="countdown-number" style="font-size: 15vw; margin: 0 5px;">:</span>
+        </div>
+        <div class="countdown-item">
+            <span class="countdown-number" style="font-size: 15vw;">${minutes}</span>
+            <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-separator">
+            <span class="countdown-number" style="font-size: 15vw; margin: 0 5px;">:</span>
+        </div>
+        <div class="countdown-item">
+            <span class="countdown-number" style="font-size: 15vw;">${seconds}</span>
+            <span class="countdown-label">Seconds</span>
+        </div>
+      `;
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+</script>
+</html>
